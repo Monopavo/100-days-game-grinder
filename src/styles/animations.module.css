@@ -1,10 +1,25 @@
-.conveyor {
-    animation: scroll 5s alternate ease-in-out infinite;
+.beltTop {
+    width: 500vw;
+    animation: belt-scroll 20s alternate-reverse ease-in infinite;
 }
 
+.beltBottom {
+    width: 500vw;
+    animation: belt-scroll 20s alternate ease-out infinite;
+}
 
 @keyframes scroll { 
     0% { transform: translateX(0); } 
-    50% { transform: translateX(-100%); } 
+    25% { transform: translateX(100%); } 
+    50% { transform: translateX(0); }
+    75% { transform: translateX(-100%); }
+    100% { transform: translateX(0); }
+}
+
+@keyframes belt-scroll { 
+    0% { transform: translateX(0); } 
+    25% { transform: translateX(100vw); } 
+    50% { transform: translateX(0); }
+    75% { transform: translateX(-100vw); }
     100% { transform: translateX(0); }
 }
