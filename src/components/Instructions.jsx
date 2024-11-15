@@ -1,4 +1,7 @@
+import {ResultsContext} from "../context";
+
 const Instructions = () => {
+    const {resultsShown} = useContext(ResultsContext);
 
 return (
     <>

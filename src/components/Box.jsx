@@ -1,22 +1,31 @@
-import { useContext, useState } from "react";
-import ContextSelected from "../contexts/ContextSelected";
+import {useEffect, useState} from "react";
+import animations from "../styles/animations.module.css";
+import {ResultsContext} from "../context";
 
-const Box = ({description, icon}) => {
-    const {toggleSelected} = useContext(ContextSelected);
-    const [selected, setSelected] = useState(false);
+const Box = ({category, description, icon, queryString, setQueryString}) => {
+    const [isSelected, setIsSelected] = useState(false);
+    const [animation, setAnimation] = useState("");
+    const {resultsShown} = useContext(ResultsContext);
+
+    const handleClick = () => {
+        setIsSelected(!isSelected);
+        setQueryString(`${queryString}${category}.`);
+    };
+
+    useEffect(() => { 
+        setAnimation(
+            isSelected ? animations.boxGrind : null);
+    }, [isSelected]);
 
     return (
-        <>
         <div 
-        className="flex-none w-24 m-auto"
-        onClick={() => toggleSelected(setSelected, selected)}
-        style={{ display : selected ? "none" : "show"}}
+            className={`flex-none w-28 p-1 m-auto ${animation}`}
+            onClick={handleClick}
         >
             <img src={icon} />
-            <p display="none">{description}</p>
+            <p className="sticky bg-slate-500 text-slate-200 font-bold text-pretty">{description}</p>
         </div>
-        </>
-    )
+    );
 };
 
 export default Box;

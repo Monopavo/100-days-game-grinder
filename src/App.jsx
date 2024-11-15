@@ -2,27 +2,19 @@ import ContainerSticky from "./components/ContainerSticky";
 import ContainerMain from "./components/ContainerMain";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
-import ContextSelected from "./contexts/ContextSelected";
+import { ResultsProvider } from "./context";
 
 const App = () => {
-    const toggleSelected = (setSelected, selected) => {
-    setSelected(!selected);
-    };
-
-    const value = {toggleSelected};
-
-
-
 
     return (
       <>  
-        <ContextSelected.Provider value={value}>
+          <ResultsProvider>
           <div className="wrapper">
           <ContainerSticky><Header/></ContainerSticky>
-          <ContainerMain />
+          <ContainerMain/>
           <ContainerSticky><Footer/></ContainerSticky>
           </div>
-        </ContextSelected.Provider>
+          </ResultsProvider>
       </>
     );
 };
