@@ -17,7 +17,7 @@ const ContainerMain = () => {
             <Instructions />
             <ContainerCarousel queryString={queryString} setQueryString={setQueryString}/>
             <ConfirmButton queryString={queryString} setQueryString={setQueryString} setGamesList={setGamesList} />
-            <ContainerResult queryString={queryString} gamesList={gamesList} />
+            <ContainerResult queryString={queryString} gamesList={gamesList} setGamesList={setGamesList}/>
         </div>
         </>
     )

@@ -29,7 +29,7 @@ const ConfirmButton = ({queryString, setQueryString, setGamesList}) => {
     const handleClick = () => {
         sendQuery();
         setResultsShown(true);
-        setQueryString(null);
+        setQueryString("");
     }
 
     return (

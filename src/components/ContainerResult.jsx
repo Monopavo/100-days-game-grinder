@@ -1,10 +1,15 @@
 import GameBox from "./GameBox";
 import {ResultsContext} from "../context";
-import {useContext} from "react";
+import {useContext, useEffect} from "react";
 import ReturnButton from "./ReturnButton";
 
-const ContainerResult = ({gamesList}) => {
+const ContainerResult = ({gamesList, setGamesList}) => {
     const {resultsShown} = useContext(ResultsContext);
+
+    useEffect(() => { 
+        if (!resultsShown) { 
+            setGamesList(""); } 
+        }, [resultsShown]);
 
     return (
         <>
