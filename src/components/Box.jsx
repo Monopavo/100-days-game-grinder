@@ -23,7 +23,7 @@ const Box = ({category, description, icon, queryString, setQueryString}) => {
             onClick={handleClick}
         >
             <img src={icon} />
-            <p className="sticky bg-slate-500 text-slate-200 font-bold text-pretty">{description}</p>
+            <p className="bg-slate-500 text-slate-200 text-xl rounded-lg font-bold text-pretty">{description}</p>
         </div>
     );
 };

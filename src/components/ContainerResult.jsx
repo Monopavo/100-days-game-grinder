@@ -16,10 +16,13 @@ const ContainerResult = ({gamesList}) => {
                         <GameBox key={game.id} game={game} />
                         ))
                     ) : (
-                        <p>There are no games that suit your search.</p>
+                        <p className="bg-slate-500 p-5 text-slate-200 rounded-lg text-xl font-bold text-pretty">
+                            <span className="block">Sorry!</span> 
+                            <span className="block">There are no games that suit your search.</span>
+                        </p>
                     )}
-                        <ReturnButton />
                 </div>
+                <ReturnButton />
             </>
         ) : null}
         </>
