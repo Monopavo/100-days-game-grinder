@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#root {
+  margin: auto;
+  box-sizing: border-box;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+@layer base {
+    .breakpoints {
+      @apply w-full sm:w-5/6 md:w-5/6 lg:w-5/6 xl:w-5/6;
+    }
+}
+
+.wrapper {
+  width: 100vw;
+  height: auto;
+  overflow-x: hidden;
+}

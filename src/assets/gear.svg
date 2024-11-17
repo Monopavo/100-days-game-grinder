@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" width="38.64mm" height="38.64mm" clip-rule="evenodd" fill-rule="evenodd" image-rendering="optimizeQuality" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" version="1.0" viewBox="0 0 3864 3864">
+ <defs>
+  <style type="text/css">
+   
+    .fil0 {fill:#2B2A29}
+   
+  </style>
+ </defs>
+   <path class="fil0" d="m1647 0h609l168 625c28 11 57 23 84 35l561-323 27 27 431 431-323 561c13 27 24 56 35 84l625 168v648l-625 168c-11 28-23 57-35 84l323 561-27 27-431 431-561-323c-27 12-56 24-84 35l-168 625h-648l-168-625c-28-11-57-23-84-35l-561 323-27-27-431-431 323-561c-13-27-24-56-35-84l-625-168v-648l625-168c11-28 23-57 35-84l-323-561 27-27 431-431 561 323c27-12 56-24 84-35l168-625h39zm285 781c636 0 1151 515 1151 1151s-515 1151-1151 1151-1151-515-1151-1151 515-1151 1151-1151z"/>
+   <path class="fil0" d="m1932 877c582 0 1055 473 1055 1055s-473 1055-1055 1055-1055-473-1055-1055 473-1055 1055-1055zm0 68c545 0 987 442 987 987s-442 987-987 987-987-442-987-987 442-987 987-987z"/>
+</svg>
