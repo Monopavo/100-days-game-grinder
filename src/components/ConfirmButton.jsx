@@ -2,7 +2,7 @@ import {useContext} from "react";
 import {ResultsContext} from "../context.jsx";
 import icon from "../assets/grind-button.svg";
 
-const ConfirmButton = ({queryString, setGamesList}) => {
+const ConfirmButton = ({queryString, setQueryString, setGamesList}) => {
     const {resultsShown, setResultsShown} = useContext(ResultsContext);
 
     const options = {
@@ -29,6 +29,7 @@ const ConfirmButton = ({queryString, setGamesList}) => {
     const handleClick = () => {
         sendQuery();
         setResultsShown(true);
+        setQueryString(null);
     }
 
     return (

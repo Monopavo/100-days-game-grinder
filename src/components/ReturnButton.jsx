@@ -6,7 +6,6 @@ const ReturnButton = () => {
     const {resultsShown, setResultsShown} = useContext(ResultsContext)
 
     const handleClick = () => {
-        window.history.back();
         setResultsShown(false);
     }
 

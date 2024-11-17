@@ -16,7 +16,7 @@ const ContainerMain = () => {
         <div className="breakpoints flex flex-col justify-center items-center bg-slate-900 m-auto">
             <Instructions />
             <ContainerCarousel queryString={queryString} setQueryString={setQueryString}/>
-            <ConfirmButton queryString={queryString} setGamesList={setGamesList} />
+            <ConfirmButton queryString={queryString} setQueryString={setQueryString} setGamesList={setGamesList} />
             <ContainerResult queryString={queryString} gamesList={gamesList} />
         </div>
         </>
